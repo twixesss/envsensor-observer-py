@@ -15,7 +15,7 @@ INACTIVE_TIMEOUT_SECONDS = 60
 
 
 # csv output to local file system
-CSV_OUTPUT = True
+CSV_OUTPUT = False
 # the directory path for csv output
 CSV_DIR_PATH = os.path.dirname(os.path.abspath(__file__)) + "/log"
 
@@ -35,11 +35,11 @@ FLUENTD_INFLUXDB_DATABASE = "xxxxxxxx"  # enter influxDB database name
 
 
 # uploading data to the cloud (required influxDB 0.9 or higher)
-INFLUXDB_OUTPUT = False
+INFLUXDB_OUTPUT = True
 # InfluxDB
-INFLUXDB_ADDRESS = "xxx.xxx.xxx.xxx"  # enter IP address of influxDB
+INFLUXDB_ADDRESS = "localhost"  # enter IP address of influxDB
 INFLUXDB_PORT = 8086  # enter port number of influxDB
-INFLUXDB_DATABASE = "xxxxxxxx"  # enter influxDB database name
-INFLUXDB_MEASUREMENT = "xxxxxxxx"  # enter measurement name
+INFLUXDB_DATABASE = "test"  # enter influxDB database name
+INFLUXDB_MEASUREMENT = "value"  # enter measurement name
 INFLUXDB_USER = "root"  # enter influxDB username
 INFLUXDB_PASSWORD = "root"  # enter influxDB user password
